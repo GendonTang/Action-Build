@@ -124,8 +124,8 @@ on:
         default: ""
       SUBLEVEL:
         description: "自定义内核等级欺骗(SUBLEVEL)"
-        required: false
-        default: ""
+        required: true
+        default: "89"
       FAST_BUILD:
         type: boolean
         description: "是否启用极速构建？"
@@ -140,7 +140,7 @@ on:
         type: boolean
         description: "是否启用网络功能拓展(NETFILTER)？"
         required: true
-        default: true
+        default: false
       CCM:
         type: boolean
         description: "是否启用网络拥塞控制与管理机制(BBR+ECN)？"
@@ -160,7 +160,7 @@ on:
         type: boolean
         description: "是否添加轻量级Linux容器支持(DroidSpaces)？"
         required: true
-        default: false
+        default: true
       RE_KERNEL:
         type: boolean
         description: "是否添加Re-Kernel？"
